@@ -1,3 +1,6 @@
+from rich.console import Console
+from rich.color import Color
 
+console = Console()
 
-print("Hello from Dockerized Python!")
+console.print("Hello from rainbowdockerized python!!!!", style="rainbow")
