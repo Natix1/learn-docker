@@ -1,6 +1,8 @@
 from rich.console import Console
-from rich.color import Color
+from rich.text import Text
 
 console = Console()
 
-console.print("Hello from rainbowdockerized python!!!!", style="rainbow")
+rainbow_text = Text.from_markup("[rainbow]Hello from rainbowdockerized python!!!![/rainbow]")
+
+console.print(rainbow_text)
